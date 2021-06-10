@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Solution49 {
     public List<List<String>> groupAnagrams(Stirng[] strs){
         Map<String,List<String>> map = new HashMap<String,List<String>>();

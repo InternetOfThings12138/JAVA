@@ -27,7 +27,7 @@ public class Solution70爬楼梯 {
 
     public static void main(String[] args) {
         int n = 10;
-        Solution70爬楼梯 solution = Solution70爬楼梯;
+        Solution70爬楼梯 solution = new Solution70爬楼梯();
         int r = solution.climbStairs(n);
         System.out.println(r);
 

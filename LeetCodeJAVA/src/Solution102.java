@@ -2,6 +2,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution102 {
+    public class TreeNode {
+        int val;
+        Solution105.TreeNode left;
+        Solution105.TreeNode right;
+        TreeNode() {}
+        TreeNode(int val) { this.val = val; }
+        TreeNode(int val, Solution105.TreeNode left, Solution105.TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
     public List<List<Integer>> levelOrder(TreeNode root){
         List<List<Integer>> ret = new ArrayList<List<Integet>>();
         if(root ==null){
