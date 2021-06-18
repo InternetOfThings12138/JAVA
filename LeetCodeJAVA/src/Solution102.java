@@ -1,21 +1,23 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Solution102 {
     public class TreeNode {
         int val;
-        Solution105.TreeNode left;
-        Solution105.TreeNode right;
+        TreeNode left;
+        TreeNode right;
         TreeNode() {}
         TreeNode(int val) { this.val = val; }
-        TreeNode(int val, Solution105.TreeNode left, Solution105.TreeNode right) {
+        TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;
             this.right = right;
         }
     }
     public List<List<Integer>> levelOrder(TreeNode root){
-        List<List<Integer>> ret = new ArrayList<List<Integet>>();
+        List<List<Integer>> ret = new ArrayList<List<Integer>>();
         if(root ==null){
             return ret;
         }

@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Map;
 
 public class Solution105 {
@@ -35,6 +36,10 @@ public class Solution105 {
             indexMap.put(inorder[i],i);
         }
         return myBuildTree(preorder,inorder,0,n-1,0,n-1);
+    }
+
+    public static void main(String[] args){
+        System.out.println("1");
     }
 }
 

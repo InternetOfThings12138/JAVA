@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Solution49 {
-    public List<List<String>> groupAnagrams(Stirng[] strs){
+    public List<List<String>> groupAnagrams(String[] strs){
         Map<String,List<String>> map = new HashMap<String,List<String>>();
         for(String str:strs){
             char[] array = str.toCharArray();
